@@ -7,11 +7,11 @@ module Phlex
 				@_view_context
 			end
 
-			def render(renderable, *args, **kwargs, &block)
+			def render(renderable, ...)
 				return super if renderable.is_a?(Phlex::HTML)
 				return super if renderable.is_a?(Class) && renderable < Phlex::HTML
 
-				@_target << @_view_context.render(renderable, *args, **kwargs, &block)
+				@_target << @_view_context.render(renderable, ...)
 
 				nil
 			end
