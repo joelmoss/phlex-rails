@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "spec_helper"
+require "view_helper"
 
 RSpec.describe Phlex::Rails::Helpers::DateTimeFieldTag do
 	include ViewHelper
